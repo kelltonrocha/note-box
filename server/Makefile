@@ -30,13 +30,13 @@ compose:
 
 ## Prints initialization message after compose phase
 msg:
-	chmod +x deployments/check-init.sh
-	./deployments/check-init.sh
+##	chmod +x deployments/check-init.sh
+	sh ./deployments/check-init.sh
 
 ## Creates .env file with environment variables
 env:
-	chmod +x deployments/generate-env.sh
-	./deployments/generate-env.sh
+## 	chmod +x deployments/generate-env.sh
+	sh ./deployments/generate-env.sh
 
 ## Gets all go test dependencies
 get-deps:

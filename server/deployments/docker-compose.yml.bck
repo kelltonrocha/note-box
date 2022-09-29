@@ -19,7 +19,7 @@ services:
             - ./mongo.env
         networks:
             - m4_insecure_auth_net
-        command: bash -c "go mod tidy && go run main.go"
+        command: "go run main.go"
         depends_on:
             - db
         external_links:
